@@ -43,7 +43,7 @@ fun DubApp() {
             .padding(32.dp)
     ) {
         Text(
-            text = "Введите букву:",
+            text = "Введите букву d или D:",
             fontSize = 20.sp
         )
 
@@ -52,7 +52,6 @@ fun DubApp() {
             onValueChange = {
                 if (it.length <= 1) input = it
             },
-            label = { Text("d") },
             singleLine = true,
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
         )
