@@ -53,7 +53,12 @@ fun DubApp() {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        Button(onClick = { /* пока пусто */ }) {
+        Button(onClick = {
+            when (input.lowercase()) {
+                "d" -> result = "это Дуб"
+                else -> result = ""
+            }
+        }) {
             Text("Проверить")
         }
 
